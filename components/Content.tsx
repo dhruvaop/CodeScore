@@ -9,7 +9,7 @@ import IconButton from "./IconButton";
 import { themes } from "../static/theme";
 import { CustomTheme } from "../theme";
 //const ENDPOINT = "https://coding-profile.vercel.app";
-const ENDPOINT = "http://localhost:3000";
+const ENDPOINT = "https://code-score-phi.vercel.app";
 
 
 

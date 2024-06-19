@@ -202,7 +202,7 @@ function Content(): JSX.Element {
               href="https://www.linkedin.com/in/dhruva-bhattacharya/"
               target="_blank"
               rel="noopener noreferrer"
-              className={classes.link}
+              //className={classes.link}
             >
              Dhruva Bhattacharya with ❤️
             </a>

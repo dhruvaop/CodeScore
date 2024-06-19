@@ -14,7 +14,7 @@ import { CustomTheme } from "../theme";
 //import { Paper, TextField } from "@mui/material";
 
 //const ENDPOINT = "https://coding-profile.vercel.app";
-const ENDPOINT = "http://localhost:3000";
+const ENDPOINT = "https://code-score-phi.vercel.app";
 
 const useStyles = makeStyles((theme: CustomTheme) =>
   createStyles({

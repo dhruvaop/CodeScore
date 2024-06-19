@@ -17,7 +17,7 @@ import { themes } from "../static/theme";
 //const ENDPOINT = "https://coding-profile.vercel.app";
 const ENDPOINT = "http://localhost:3000";
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles((theme: CustomTheme) =>
   createStyles({
     paper: {
       margin: "auto",
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) =>
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      padding: theme.spacing(2), // Added padding to align with other styles
+      padding: theme.spacing(2),
       color: "white",
     },
     text: {
@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) =>
     },
   })
 );
+
 
 function CodechefContent(): JSX.Element {
   const classes = useStyles();
@@ -303,4 +304,3 @@ function CodechefContent(): JSX.Element {
 }
 
 export default CodechefContent;
-

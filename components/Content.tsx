@@ -7,7 +7,7 @@ import { makeStyles } from "@mui/styles"; // Import makeStyles from @mui/styles
 import { GitHub as GitHubIcon, BubbleChart as BubbleChartIcon, Image as ImageIcon, BorderColor as BorderColorIcon } from "@mui/icons-material";
 import IconButton from "./IconButton";
 import { themes } from "../static/theme";
-
+import { CustomTheme } from "../theme";
 //const ENDPOINT = "https://coding-profile.vercel.app";
 const ENDPOINT = "http://localhost:3000";
 
@@ -24,7 +24,7 @@ const Root = styled("div")(({ theme }) => ({
   color: "white",
 }));
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: CustomTheme) => ({
   paper: {
     margin: "auto",
     backgroundColor: theme.palette.info.light,

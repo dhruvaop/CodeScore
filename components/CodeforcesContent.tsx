@@ -13,11 +13,11 @@ import ImageIcon from "@mui/icons-material/Image";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 import IconButton from "./IconButton";
 import { themes } from "../static/theme";
-
+import { CustomTheme } from "../theme";
 //const ENDPOINT = "https://coding-profile.vercel.app";
  const ENDPOINT = "http://localhost:3000";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: CustomTheme) => ({
   paper: {
     margin: "auto",
     backgroundColor: theme.palette.info.light,

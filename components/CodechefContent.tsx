@@ -9,50 +9,63 @@ import ImageIcon from "@mui/icons-material/Image";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 import IconButton from "./IconButton";
 import { themes } from "../static/theme";
-
+import { CustomTheme } from "../theme";
 
 //import { Paper, TextField } from "@mui/material";
 
 //const ENDPOINT = "https://coding-profile.vercel.app";
 const ENDPOINT = "http://localhost:3000";
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    margin: "auto",
-    backgroundColor: theme.palette.info.light,
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    fontSize: theme.spacing(5),
-  },
-  successStatus: {
-    color: theme.palette.primary.main,
-  },
-  errorStatus: {
-    color: theme.palette.secondary.main,
-  },
-  colSection: {
-    padding: theme.spacing(2),
-    display: "flex",
-    flexDirection: "column",
-  },
-  rowSection: {
-    padding: theme.spacing(2),
-    display: "flex",
-    flexDirection: "row",
-  },
-  textFieldLabel: {
-    color: theme.palette.primary.main,
-    marginRight: "30px",
-  },
-  textInput: {
-    color: "white",
-  },
-}));
+const useStyles = makeStyles((theme: CustomTheme) =>
+  createStyles({
+    paper: {
+      margin: "auto",
+      backgroundColor: theme.palette.info.light,
+      height: "100%",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: theme.spacing(2),
+      color: "white",
+    },
+    text: {
+      fontSize: theme.spacing(5),
+    },
+    successStatus: {
+      color: theme.palette.primary.main,
+    },
+    errorStatus: {
+      color: theme.palette.secondary.main,
+    },
+    colSection: {
+      padding: theme.spacing(2),
+      display: "flex",
+      flexDirection: "column",
+    },
+    rowSection: {
+      padding: theme.spacing(2),
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    textFieldLabel: {
+      color: theme.palette.primary.main,
+      marginRight: theme.spacing(2),
+    },
+    textInput: {
+      color: "white",
+    },
+    link: {
+      color: theme.palette.primary.main,
+      textDecoration: "none",
+      "&:hover": {
+        textDecoration: "underline",
+      },
+    },
+  })
+);
 
 
 function CodechefContent(): JSX.Element {
